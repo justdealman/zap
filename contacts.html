@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Zap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1200, user-scalable=yes">
+	<!--<link href="./favicon.ico" rel="shortcut icon">-->
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/jquery.js"></script>
+	<!--[if IE 8]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+		<script src="./js/ie8.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<a href="#"><img src="./img/logo.png" width="66" height="48" alt=""></a>
+			<ul>
+				<li><a href="#">Наши услуги / 我們的服務</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#" class="enter" data-open="login">Вход</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div>
+				<h1><span>Контакты</span></h1>
+				<div class="contacts-b">
+					<h4>Вы можете выбрать любой удобный способ связи с нами:</h4>
+					<div>
+						<ul class="information">
+							<li>
+								<p class="phone">Телефон горячей линии</p>
+								<h5>8 800 301 0524</h5>
+							</li>
+							<li>
+								<p class="phone">Международная линия</p>
+								<h5>+7 495 133 9880</h5>
+							</li>
+							<li>
+								<p class="email">Email</p>
+								<h6>info@zap-line.com</h6>
+							</li>
+						</ul>
+						<div class="form">
+							<h5>Оставьте сообщение:</h5>
+							<p><span>ФИО</span> <input type="text"></p>
+							<p><span>Email</span> <input type="text"></p>
+							<p><span>Сообщение</span> <textarea cols="60" rows="7"></textarea></p>
+							<button>Отправить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="map-b">
+			<div>
+				<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=BNQbUMblXLtgvjTIhN-cT3EmzXrEFo_8&width=100%&height=274"></script>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<footer>
+		<p>© 2015 ООО "Технология"</p>
+		<div>
+			<p>Телефон "горячей линии" 8-800-301-05-24</p>
+			<p>Телефон международной линии +7-3852-59-02-91</p>
+		</div>
+		<h5>Разработка сайта — <a href="#"><img src="./img/letsrock_logo.png" width="89" height="22" alt=""></a></h5>
+	</footer>
+	<div class="fade"></div>
+	<div class="modal" data-target="register">
+		<h5>Регистрация</h5>
+		<div class="form">
+			<p><span>ФИО <em>*</em></span> <input type="text"></p>
+			<p><span>Email <em>*</em></span> <input type="text"></p>
+			<p><span>Пароль <em>*</em></span> <input type="text"></p>
+			<p><span>Повтор пароля <em>*</em></span> <input type="text"></p>
+			<div class="more">
+				<h6><input type="checkbox"> Получать e-mail рассылку</h6>
+				<h6><em>*</em> - Поля обязательные к заполнению</h6>
+			</div>
+			<button>Зарегистрироваться</button>
+		</div>
+	</div>
+	<div class="modal" data-target="login">
+		<h5>Вход на сайт</h5>
+		<div class="form">
+			<p><span>Email <em>*</em></span> <input type="text"></p>
+			<p><span>Пароль <em>*</em></span> <input type="text"></p>
+			<div class="more">
+				<h6><input type="checkbox"> Запомнить меня <a href="#" class="recover">Забыли свой пароль?</a> <a href="#" class="reg">Регистрация</a></h6>
+				<h6><em>*</em> - Поля обязательные к заполнению</h6>
+			</div>
+			<button>Зарегистрироваться</button>
+		</div>
+	</div>
+	<script src="./js/easing.js"></script>
+	<script src="./js/jcarousel.js"></script>
+	<script src="./js/mobile.js"></script>
+	<script src="./js/slides.js"></script>
+	<script src="./js/dynamic.js"></script>
+</body>
+</html>
