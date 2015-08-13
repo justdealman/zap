@@ -1178,7 +1178,7 @@ div.price {
 	right:50%;
 	top:50px;
 	z-index:30;
-	width:590px;
+	width:490px;
 	margin-right:-530px;
 }
 .core .information h2 {
@@ -1188,13 +1188,14 @@ div.price {
     font-family:'PF Din Text Condensed', sans-serif;
 	text-transform:uppercase;
 	padding:0;
-	margin:0 0 37px -40px;
+	margin:0 0 37px -140px;
 }
 .core .information h2 span {
 	font-weight:normal;
 }
 .core .information .level1 {
-	margin:0;
+	width:590px;
+	margin:0 0 0 -100px;
 }
 .core .information .level1 p {
 	font-size:15px;
@@ -1212,7 +1213,7 @@ div.price {
 	margin:7px -20px -20px 7px;
 }
 .core .information .level2 {
-	margin:47px 0 0 100px;
+	margin:47px 0 0 0;
 }
 .core .information .level2 h6 {
 	position:relative;
@@ -1250,7 +1251,7 @@ div.price {
 	margin:0 0 19px;
 }
 .core .information .level3 {
-	margin:39px 0 0 170px;
+	margin:39px 0 0 70px;
 }
 .core .information .level3 h5 {
 	font-size:15px;
@@ -1274,7 +1275,7 @@ div.price {
 .core .information .team {
 	width:630px;
 	padding:24px 0 23px;
-	margin:0 0 0 -40px;
+	margin:0 0 0 -140px;
 	background:url('../img/team_bg.png') no-repeat left top;
 }
 .core .information .team li {
@@ -1420,21 +1421,21 @@ div.price {
 	margin-top:-267px;
 	margin-left:-252px;
 	background:url('../img/card1_bg.png') no-repeat left top;
-	/*transition:transform 0.2s ease-in-out;
-	-webkit-transition:transform 0.2s ease-in-out;
-	-moz-transition:transform 0.2s ease-in-out;
-	-o-transition:transform 0.2s ease-in-out;
+	transition:transform 0.2s ease;
+	-webkit-transition:transform 0.2s ease;
+	-moz-transition:transform 0.2s ease;
+	-o-transition:transform 0.2s ease;
 	-webkit-transform:translate(0,0);
 	-moz-transform:translate(0,0);
 	-o-transform:translate(0,0);
-	transform:translate(0,0);*/
+	transform:translate(0,0);
 }
-/*.contacts .card.first:hover {
+.contacts .card.first.active {
 	-webkit-transform:translate(2px,-5px);
 	-moz-transform:translate(2px,-5px);
 	-o-transform:translate(2px,-5px);
 	transform:translate(2px,-5px);
-}*/
+}
 .contacts .card.first > div {
 	left:98px;
 	top:69px;
@@ -1447,21 +1448,21 @@ div.price {
 	margin-top:-39px;
 	margin-left:-49px;
 	background:url('../img/card2_bg.png') no-repeat left top;
-	/*transition:transform 0.2s ease-in-out;
-	-webkit-transition:transform 0.2s ease-in-out;
-	-moz-transition:transform 0.2s ease-in-out;
-	-o-transition:transform 0.2s ease-in-out;
+	transition:transform 0.2s ease;
+	-webkit-transition:transform 0.2s ease;
+	-moz-transition:transform 0.2s ease;
+	-o-transition:transform 0.2s ease;
 	-webkit-transform:translate(0,0);
 	-moz-transform:translate(0,0);
 	-o-transform:translate(0,0);
-	transform:translate(0,0);*/
+	transform:translate(0,0);
 }
-/*.contacts .card.second:hover {
+.contacts .card.second.active {
 	-webkit-transform:translate(-2px,5px);
 	-moz-transform:translate(-2px,5px);
 	-o-transform:translate(-2px,5px);
 	transform:translate(-2px,5px);
-}*/
+}
 .contacts .card.second > div {
 	left:95px;
 	top:37px;

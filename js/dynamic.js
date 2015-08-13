@@ -221,6 +221,17 @@ $(document).ready(function() {
 		$('.fade, .modal').stop(true,true).fadeOut(400);
 		event.preventDefault();
 	});
+	$('.contacts .card').hover(
+		function() {
+			$(this).delay(200).queue(function(next) {
+				$(this).addClass('active');
+				next();
+			});
+		},
+		function() {
+			$(this).removeClass('active');
+		}
+	);
 });
 $(window).resize(function() {
 	if ( $('.wrapper').length > 0 ) {
