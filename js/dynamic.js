@@ -148,7 +148,7 @@ $(document).ready(function() {
 		});
 		$('.scroll h6').bind('click', function(event) {
 			$('html, body').animate({
-				scrollTop: $('.core').position().top+$('.core').height()-$(window).height()+'px'
+				scrollTop: $('.core').position().top+101+'px'
 			}, 800, 'easeInOutQuad');
 			event.preventDefault();
 		});
