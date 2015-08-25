@@ -1430,6 +1430,23 @@ div.price {
 	-o-transform:translate(0,0);
 	transform:translate(0,0);
 }
+.contacts .card.first:after {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	width:448px;
+	height:223px;
+	background:url('../img/card1_opacity.png') no-repeat left top;
+	opacity:0;
+	transition:opacity 0.2s ease;
+	-webkit-transition:opacity 0.2s ease;
+	-moz-transition:opacity 0.2s ease;
+	-o-transition:opacity 0.2s ease;
+}
+.contacts .card.first:hover:after {
+	opacity:1;
+}
 .contacts .card.first.active {
 	-webkit-transform:translate(2px,-5px);
 	-moz-transform:translate(2px,-5px);
@@ -1439,6 +1456,7 @@ div.price {
 .contacts .card.first > div {
 	left:98px;
 	top:69px;
+	z-index:10;
 }
 .contacts .card.second {
 	position:absolute;
@@ -1457,6 +1475,23 @@ div.price {
 	-o-transform:translate(0,0);
 	transform:translate(0,0);
 }
+.contacts .card.second:after {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	width:448px;
+	height:223px;
+	background:url('../img/card2_shadow.png') no-repeat left top;
+	opacity:0;
+	transition:opacity 0.2s ease;
+	-webkit-transition:opacity 0.2s ease;
+	-moz-transition:opacity 0.2s ease;
+	-o-transition:opacity 0.2s ease;
+}
+.contacts .card.second:hover:after {
+	opacity:1;
+}
 .contacts .card.second.active {
 	-webkit-transform:translate(-2px,5px);
 	-moz-transform:translate(-2px,5px);
@@ -1464,6 +1499,7 @@ div.price {
 	transform:translate(-2px,5px);
 }
 .contacts .card.second > div {
+	z-index:10;
 	left:95px;
 	top:37px;
 }
