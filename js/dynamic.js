@@ -61,16 +61,30 @@ function slider() {
 		'width': $('body').width()+'px',
 		'height': h+'px'
 	});
-	$('.slider').slides({
-		generatePagination: true,
-		generateNextPrev: true,
-		container: 'container',
-		effect: 'slide',
-		slideSpeed: 800,
-		slideEasing: 'easeInOutQuad',
-		play: 10000,
-		pause: 1000
-	});
+	if ( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$('.slider').slides({
+			generatePagination: true,
+			generateNextPrev: true,
+			container: 'container',
+			effect: 'slide',
+			slideSpeed: 800,
+			slideEasing: 'easeInOutQuad',
+			play: 10000,
+			pause: 1000
+		});
+	}
+	else {
+		$('.slider').slides({
+			generatePagination: true,
+			generateNextPrev: true,
+			container: 'container',
+			effect: 'slide',
+			slideSpeed: 800,
+			slideEasing: 'easeInOutQuad',
+			play: 0,
+			pause: 0
+		});
+	}
 	$('.slider .pagination li').each(function() {
 		var c = $(this).index()+1;
 		var t = $(this).parents('.slider').find('.container > div > div:nth-child('+c+')').attr('data-title');
@@ -157,7 +171,7 @@ $(document).ready(function() {
 			$(this).css({
 				'top': $('.core').height()*18/999+101+'px'
 			});
-		});
+		});	
 	}
 	if ( $('.slider').length > 0 ) {
 		slider();
